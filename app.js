@@ -41,10 +41,10 @@ if (action === "spotify") {
             title: data.Title,
             year: data.Year,
             rating: data.imdbRating,
-            // location:,
-            // langusage:,
-            // plots:,
-            // actors:
+            location: data.Country,
+            langusage: data.Langusage,
+            plots: data.Plots,
+            actors: data.actors
         });
 
     })
