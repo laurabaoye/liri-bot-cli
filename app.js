@@ -23,10 +23,10 @@ if (action === "spotify") {
     }, (error, data) => {
         // console.log(data.tracks.items[0]);
         console.log({
-            artist: data.artists[0].name,
-            // song: data.artists[0].name,
-            // album: data.,
-            // url: data.artist[0].url
+            artist: data.tracks.items[0].artists[0].name,
+            song: data.tracks.items[0].name,
+            album: data.tracks.items[0].album.name,
+            url: data.tracks.items[0].artists[0].href
         });
 
     })
@@ -42,9 +42,9 @@ if (action === "spotify") {
             year: data.Year,
             rating: data.imdbRating,
             location: data.Country,
-            langusage: data.Langusage,
-            plots: data.Plots,
-            actors: data.actors
+            langusage: data.Language,
+            plots: data.Plot,
+            actors: data.Actors
         });
 
     })
