@@ -1,0 +1,14 @@
+homework requirements
+----------
+npm installs
+----------
+node-spotify-api
+axios
+omdb-client
+dotenv
+
+instructions
+----------
+1.use process.argv for action and commend
+2.set up apikeys with process.env
+3.set commends in terminal and retrieve data from api
